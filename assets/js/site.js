@@ -1,3 +1,20 @@
+function basePath() {
+  // Works on both:
+  // - https://keynee.com/...
+  // - https://username.github.io/repo/...
+  const parts = window.location.pathname.split("/").filter(Boolean);
+
+  // If it's GitHub Pages project site, first segment is repo name.
+  // If it's a custom domain root site, there may be 0 segments.
+  // We detect repo mode by checking hostname ends with github.io.
+  const isGithubIo = window.location.hostname.endsWith("github.io");
+
+  if (!isGithubIo) return ""; // custom domain root
+
+  // project pages: /<repo>/...
+  return parts.length ? "/" + parts[0] : "";
+}
+
 async function inject(selector, url) {
   const el = document.querySelector(selector);
   if (!el) return;
@@ -10,11 +27,8 @@ async function inject(selector, url) {
 
 function setActiveNav() {
   const page = document.body.getAttribute("data-page");
-  const links = document.querySelectorAll("[data-nav]");
-  links.forEach((a) => {
-    if (a.getAttribute("data-nav") === page) {
-      a.setAttribute("aria-current", "page");
-    }
+  document.querySelectorAll("[data-nav]").forEach((a) => {
+    if (a.getAttribute("data-nav") === page) a.setAttribute("aria-current", "page");
   });
 }
 
@@ -25,8 +39,11 @@ function setYear() {
 }
 
 (async function init() {
-  await inject("#site-header", "/partials/header.html");
-  await inject("#site-footer", "/partials/footer.html");
+  const base = basePath();
+
+  await inject("#site-header", `${base}/partials/header.html`);
+  await inject("#site-footer", `${base}/partials/footer.html`);
+
   setActiveNav();
   setYear();
 })();
