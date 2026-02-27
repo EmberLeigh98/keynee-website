@@ -3,34 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>KeyNee | Page Not Found</title>
-  <meta name="description" content="The page you are looking for does not exist on the official KeyNee website." />
   <meta name="robots" content="noindex" />
   <meta name="theme-color" content="#0b0d10" />
-
-  <link rel="canonical" href="https://keynee.com/404.html" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="KeyNee Home">
-        <span class="logo">KeyNee</span>
-        <span class="tag">Independent Electronic Artist</span>
-      </a>
-
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./music.html">Music</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body data-page="404">
+  <div id="site-header"></div>
 
   <main class="section">
     <div class="container">
@@ -38,26 +19,17 @@
         <div class="card-inner">
           <span class="kicker">404</span>
           <h1 class="h1" style="margin-top:12px;">Page not found</h1>
-          <p class="lead">That page doesn’t exist. Use the buttons below to get back to the official KeyNee pages.</p>
+          <p class="lead">That page doesn’t exist. Use the navigation or return home.</p>
           <div class="actions">
-            <a class="btn primary" href="./index.html">Home</a>
-            <a class="btn" href="./music.html">Music</a>
-            <a class="btn" href="./contact.html">Contact</a>
+            <a class="btn primary" href="/index.html">Home</a>
+            <a class="btn" href="/contact.html">Contact</a>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> KeyNee (Connor Kinney). All rights reserved.</div>
-      <div><a href="./index.html">Home</a> · <a href="./contact.html">Contact</a></div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <div id="site-footer"></div>
+  <script src="./assets/js/site.js"></script>
 </body>
 </html>
