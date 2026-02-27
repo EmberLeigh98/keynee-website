@@ -8,9 +8,10 @@
   <meta name="description" content="Contact KeyNee for booking, licensing, press, collaborations, or business inquiries." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b0d10" />
+  <meta name="author" content="Connor Kinney" />
 
   <link rel="canonical" href="https://keynee.com/contact.html" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 
   <meta property="og:title" content="KeyNee | Contact" />
   <meta property="og:description" content="Professional contact for KeyNee (Connor Kinney): booking, licensing, press, and business." />
@@ -50,20 +51,17 @@
           <div class="card-inner">
             <span class="kicker">Business & Booking</span>
             <h1 class="h1" style="margin-top:12px;">Contact</h1>
-            <p class="lead">
-              For booking, licensing, press, collaborations, or business inquiries, email directly or use the form.
-            </p>
+            <p class="lead">For booking, licensing, press, collaborations, or business inquiries, email directly or use the form.</p>
 
             <div class="grid-2" style="margin-top:14px;">
               <div>
                 <h2>Contact Form</h2>
-                <p class="subtle">Submissions are collected securely in Netlify (no backend setup required).</p>
+                <p class="subtle">Messages are delivered to keyneeofficial@gmail.com.</p>
 
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="form">
-                  <input type="hidden" name="form-name" value="contact" />
+                <form class="form" method="POST" action="https://formspree.io/f/mjgezozy">
                   <div class="field" style="display:none;">
-                    <label for="bot-field">Do not fill this out</label>
-                    <input id="bot-field" name="bot-field" />
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
                   </div>
 
                   <div class="field">
@@ -86,6 +84,9 @@
                     <textarea id="message" name="message" required></textarea>
                   </div>
 
+                  <input type="hidden" name="_next" value="https://keynee.com/thanks.html" />
+                  <input type="hidden" name="_subject" value="KeyNee Website Contact" />
+
                   <button class="btn primary" type="submit">Send Message</button>
                 </form>
               </div>
@@ -100,78 +101,21 @@
                 <div class="hr"></div>
 
                 <h2>Official Links</h2>
-                <div class="list" style="margin-top:12px;">
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">Spotify</div>
-                      <p class="desc">Official artist profile.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://open.spotify.com/artist/3nKXPiUilxv2VnHQzcSUjg" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">Apple Music</div>
-                      <p class="desc">Official artist page.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://music.apple.com/us/artist/keynee/1795952436" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">SoundCloud</div>
-                      <p class="desc">Official uploads.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://soundcloud.com/keyneeofficial" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">YouTube</div>
-                      <p class="desc">Videos and uploads.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://www.youtube.com/@keyneeofficial" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">Instagram</div>
-                      <p class="desc">Updates and announcements.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://www.instagram.com/keyneeofficial/" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">X (Twitter)</div>
-                      <p class="desc">Updates and announcements.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://x.com/keyneeofficial" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">TikTok</div>
-                      <p class="desc">Short-form previews.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://www.tiktok.com/@keyneeofficial?_r=1&_t=ZT-94H7k94pDt0" target="_blank" rel="noopener">Open</a></div>
-                  </div>
-
-                  <div class="item">
-                    <div class="meta">
-                      <div class="title">Link Hub</div>
-                      <p class="desc">All KeyNee links in one place.</p>
-                    </div>
-                    <div class="right"><a class="btn" href="https://ffm.bio/keyneeofficial?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnL_d3eMAfAOSUNmQb2b5dzyDnwb2EbNoDO7QwXjFbBvjmENhUtZP0EtmZ3xQ_aem_nmFagQft4AGV7rJnzErsvA" target="_blank" rel="noopener">Open</a></div>
-                  </div>
+                <div class="platforms" aria-label="Official links">
+                  <a href="https://open.spotify.com/artist/3nKXPiUilxv2VnHQzcSUjg" target="_blank" rel="noopener noreferrer">Spotify</a>
+                  <a href="https://music.apple.com/us/artist/keynee/1795952436" target="_blank" rel="noopener noreferrer">Apple Music</a>
+                  <a href="https://soundcloud.com/keyneeofficial" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+                  <a href="https://www.youtube.com/@keyneeofficial" target="_blank" rel="noopener noreferrer">YouTube</a>
+                  <a href="https://www.instagram.com/keyneeofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a href="https://x.com/keyneeofficial" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+                  <a href="https://www.tiktok.com/@keyneeofficial?_r=1&_t=ZT-94H7k94pDt0" target="_blank" rel="noopener noreferrer">TikTok</a>
+                  <a href="https://ffm.bio/keyneeofficial?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnL_d3eMAfAOSUNmQb2b5dzyDnwb2EbNoDO7QwXjFbBvjmENhUtZP0EtmZ3xQ_aem_nmFagQft4AGV7rJnzErsvA" target="_blank" rel="noopener noreferrer">Link Hub</a>
                 </div>
 
                 <div class="hr"></div>
 
-                <h2>Brand</h2>
-                <p class="subtle">
-                  KeyNee is the official artist name used for releases and promotional materials. This page provides a consistent public contact point.
-                </p>
+                <h2>Official Site</h2>
+                <p class="subtle"><strong>keynee.com</strong> is the official website for KeyNee.</p>
               </div>
             </div>
 
