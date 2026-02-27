@@ -8,132 +8,90 @@
   <meta name="description" content="Contact KeyNee for booking, licensing, press, collaborations, or business inquiries." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b0d10" />
-  <meta name="author" content="Connor Kinney" />
-
   <link rel="canonical" href="https://keynee.com/contact.html" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-
-  <meta property="og:title" content="KeyNee | Contact" />
-  <meta property="og:description" content="Professional contact for KeyNee (Connor Kinney): booking, licensing, press, and business." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://keynee.com/contact.html" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="KeyNee | Contact" />
-  <meta name="twitter:description" content="Contact KeyNee for booking, licensing, press, or business inquiries." />
-
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
-<body>
+<body data-page="contact">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="KeyNee Home">
-        <span class="logo">KeyNee</span>
-        <span class="tag">Independent Electronic Artist</span>
-      </a>
+  <div id="site-header"></div>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="./index.html">Home</a>
-        <a href="./music.html">Music</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html" aria-current="page">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <main id="main" class="section">
+    <div class="container">
+      <div class="card">
+        <div class="card-inner">
+          <span class="kicker">Contact</span>
+          <h1 class="h1" style="margin-top:12px;">Business inquiries</h1>
+          <p class="lead">Booking, licensing, press, collaborations, and general business.</p>
 
-  <main id="main">
-    <section class="section">
-      <div class="container">
-        <div class="card">
-          <div class="card-inner">
-            <span class="kicker">Business & Booking</span>
-            <h1 class="h1" style="margin-top:12px;">Contact</h1>
-            <p class="lead">For booking, licensing, press, collaborations, or business inquiries, email directly or use the form.</p>
+          <div class="grid-2" style="margin-top:14px;">
+            <div>
+              <h2>Contact form</h2>
+              <p class="small">Messages are delivered to keyneeofficial@gmail.com.</p>
 
-            <div class="grid-2" style="margin-top:14px;">
-              <div>
-                <h2>Contact Form</h2>
-                <p class="subtle">Messages are delivered to keyneeofficial@gmail.com.</p>
-
-                <form class="form" method="POST" action="https://formspree.io/f/mjgezozy">
-                  <div class="field" style="display:none;">
-                    <label for="company">Company</label>
-                    <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
-                  </div>
-
-                  <div class="field">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" autocomplete="name" required />
-                  </div>
-
-                  <div class="field">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" autocomplete="email" required />
-                  </div>
-
-                  <div class="field">
-                    <label for="subject">Subject</label>
-                    <input id="subject" name="subject" type="text" required />
-                  </div>
-
-                  <div class="field">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                  </div>
-
-                  <input type="hidden" name="_next" value="https://keynee.com/thanks.html" />
-                  <input type="hidden" name="_subject" value="KeyNee Website Contact" />
-
-                  <button class="btn primary" type="submit">Send Message</button>
-                </form>
-              </div>
-
-              <div>
-                <h2>Direct Email</h2>
-                <p class="subtle">Fastest response for business inquiries:</p>
-                <p style="margin-top:10px;">
-                  <a class="btn" href="mailto:keyneeofficial@gmail.com">keyneeofficial@gmail.com</a>
-                </p>
-
-                <div class="hr"></div>
-
-                <h2>Official Links</h2>
-                <div class="platforms" aria-label="Official links">
-                  <a href="https://open.spotify.com/artist/3nKXPiUilxv2VnHQzcSUjg" target="_blank" rel="noopener noreferrer">Spotify</a>
-                  <a href="https://music.apple.com/us/artist/keynee/1795952436" target="_blank" rel="noopener noreferrer">Apple Music</a>
-                  <a href="https://soundcloud.com/keyneeofficial" target="_blank" rel="noopener noreferrer">SoundCloud</a>
-                  <a href="https://www.youtube.com/@keyneeofficial" target="_blank" rel="noopener noreferrer">YouTube</a>
-                  <a href="https://www.instagram.com/keyneeofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                  <a href="https://x.com/keyneeofficial" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-                  <a href="https://www.tiktok.com/@keyneeofficial?_r=1&_t=ZT-94H7k94pDt0" target="_blank" rel="noopener noreferrer">TikTok</a>
-                  <a href="https://ffm.bio/keyneeofficial?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnL_d3eMAfAOSUNmQb2b5dzyDnwb2EbNoDO7QwXjFbBvjmENhUtZP0EtmZ3xQ_aem_nmFagQft4AGV7rJnzErsvA" target="_blank" rel="noopener noreferrer">Link Hub</a>
+              <form class="form" method="POST" action="https://formspree.io/f/mjgezozy">
+                <div class="field" style="display:none;">
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
                 </div>
 
-                <div class="hr"></div>
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
 
-                <h2>Official Site</h2>
-                <p class="subtle"><strong>keynee.com</strong> is the official website for KeyNee.</p>
-              </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <input id="subject" name="subject" type="text" required />
+                </div>
+
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <input type="hidden" name="_next" value="https://keynee.com/thanks.html" />
+                <input type="hidden" name="_subject" value="KeyNee Website Contact" />
+
+                <button class="btn primary" type="submit">Send message</button>
+              </form>
             </div>
 
+            <div>
+              <h2>Direct email</h2>
+              <p class="subtle">Fastest response:</p>
+              <p style="margin-top:10px;">
+                <a class="btn primary" href="mailto:keyneeofficial@gmail.com">keyneeofficial@gmail.com</a>
+              </p>
+
+              <div class="hr"></div>
+
+              <h2>Official profiles</h2>
+              <div class="platforms" aria-label="Official links">
+                <a href="https://open.spotify.com/artist/3nKXPiUilxv2VnHQzcSUjg" target="_blank" rel="noopener noreferrer">Spotify</a>
+                <a href="https://music.apple.com/us/artist/keynee/1795952436" target="_blank" rel="noopener noreferrer">Apple Music</a>
+                <a href="https://soundcloud.com/keyneeofficial" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+                <a href="https://www.youtube.com/@keyneeofficial" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.instagram.com/keyneeofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://x.com/keyneeofficial" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://www.tiktok.com/@keyneeofficial?_r=1&_t=ZT-94H7k94pDt0" target="_blank" rel="noopener noreferrer">TikTok</a>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> KeyNee (Connor Kinney). All rights reserved.</div>
-      <div><a href="./index.html">Home</a> · <a href="./music.html">Music</a></div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <div id="site-footer"></div>
+  <script src="./assets/js/site.js"></script>
 </body>
 </html>
