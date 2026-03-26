@@ -93,6 +93,11 @@ a:hover{text-decoration:underline;text-underline-offset:3px}
 }
 .card-inner{padding:26px}
 .hr{height:1px;background:var(--border);margin:18px 0}
+.mt-0{margin-top:0}
+.mt-10{margin-top:10px}
+.mt-12{margin-top:12px}
+.mt-14{margin-top:14px}
+.mt-18{margin-top:18px}
 
 .kicker{
   display:inline-flex;align-items:center;gap:10px;
@@ -176,6 +181,7 @@ a:hover{text-decoration:underline;text-underline-offset:3px}
   border:1px solid var(--border);
   background:rgba(0,0,0,.18);
 }
+.embed iframe{display:block;border:0;border-radius:12px}
 
 .list{display:grid;gap:12px}
 .item{
@@ -193,6 +199,7 @@ a:hover{text-decoration:underline;text-underline-offset:3px}
 
 .form{display:grid;gap:12px}
 .field{display:grid;gap:6px}
+.is-hidden{display:none}
 label{font-weight:900;font-size:.95rem}
 input,textarea{
   width:100%;
@@ -233,6 +240,10 @@ textarea{min-height:140px;resize:vertical}
   font-size:.92rem;
 }
 
+.th-date{width:170px}
+.th-type{width:140px}
+.th-location{width:170px}
+
 .table{
   width:100%;
   border-collapse:separate;
@@ -271,15 +282,4 @@ textarea{min-height:140px;resize:vertical}
 @media (max-width:520px){
   .container{width:min(100% - 28px, var(--max))}
   .nav a{padding:8px 10px;font-size:.92rem}
-}
-.badge{
-  display:inline-flex;
-  align-items:center;
-  padding:7px 10px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.12);
-  color:rgba(233,238,245,.88);
-  font-size:.9rem;
-  background:rgba(255,255,255,.03);
-  font-weight:800;
 }
