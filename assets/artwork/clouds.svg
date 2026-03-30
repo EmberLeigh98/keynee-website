@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Clouds cover art</title>
+  <desc id="desc">Dreamy sky themed cover with layered cloud shapes and title text.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ec7ff"/>
+      <stop offset="100%" stop-color="#3159c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <ellipse cx="300" cy="420" rx="220" ry="110" fill="rgba(255,255,255,0.65)"/>
+  <ellipse cx="500" cy="450" rx="260" ry="120" fill="rgba(255,255,255,0.6)"/>
+  <ellipse cx="760" cy="400" rx="250" ry="115" fill="rgba(255,255,255,0.62)"/>
+  <ellipse cx="640" cy="560" rx="380" ry="140" fill="rgba(255,255,255,0.52)"/>
+  <text x="90" y="960" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="102" font-weight="700">Clouds</text>
+  <text x="90" y="1040" fill="#e8f3ff" font-family="Arial, Helvetica, sans-serif" font-size="48">KeyNee</text>
+</svg>

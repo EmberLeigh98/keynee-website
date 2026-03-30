@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Titanium remix art</title>
+  <desc id="desc">Metallic blue abstract streaks with title text.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c6d1e0"/>
+      <stop offset="45%" stop-color="#7f97b8"/>
+      <stop offset="100%" stop-color="#314764"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <g fill="none" stroke="#f0f4fa" stroke-opacity="0.55">
+    <path d="M80 780 C280 520, 520 980, 1120 420" stroke-width="16"/>
+    <path d="M60 900 C260 640, 520 1080, 1140 560" stroke-width="10"/>
+    <path d="M120 650 C300 450, 560 820, 1060 260" stroke-width="6"/>
+  </g>
+  <text x="90" y="950" fill="#f8fbff" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="700">Titanium (Remix)</text>
+  <text x="90" y="1030" fill="#e9eef7" font-family="Arial, Helvetica, sans-serif" font-size="44">KeyNee</text>
+</svg>
